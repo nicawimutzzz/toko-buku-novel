@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVibe | Bestie Literasi Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700;800&family=Plus+Jakarta+Sans:wght@400;600&display=swap');
+        
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FFF5F7; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Bricolage Grotesque', sans-serif; }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #0D9488, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px) rotate(2deg);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #FFF5F7; }
+        ::-webkit-scrollbar-thumb { background: #0D9488; border-radius: 10px; }
+    </style>
+</head>
+<body class="selection:bg-teal-200 selection:text-teal-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 px-4 pt-4">
+        <div class="max-w-6xl mx-auto glass rounded-3xl px-6 py-4 flex justify-between items-center shadow-xl shadow-pink-100/50">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center shadow-lg">
+                    <i class="fas fa-book-open text-white"></i>
+                </div>
+                <span class="text-2xl font-black text-teal-900 tracking-tighter">BookVibe.</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-bold text-teal-800 uppercase tracking-widest">
+                <a href="#curhat" class="hover:text-pink-500 transition">Curhat</a>
+                <a href="#solusi" class="hover:text-pink-500 transition">Solusi</a>
+                <a href="#testi" class="hover:text-pink-500 transition">Bestie</a>
+            </div>
+            <button class="bg-pink-500 text-white px-6 py-2.5 rounded-2xl text-sm font-bold hover:bg-pink-600 transition-all hover:scale-105 shadow-lg shadow-pink-200">
+                Gas Baca!
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-40 pb-24 px-6">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="text-left">
+                <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm mb-8 border border-pink-100">
+                    <span class="flex h-2 w-2 rounded-full bg-pink-500 animate-pulse"></span>
+                    <span class="text-xs font-black text-pink-600 uppercase tracking-widest italic">Toko Novel Ter-Update di Jateng</span>
+                </div>
+                <h1 class="text-6xl md:text-8xl font-black text-teal-900 mb-8 leading-[0.9]">
+                    Hobi Baca Tapi <br>
+                    <span class="gradient-text italic">Dompet Kritis?</span>
+                </h1>
+                <p class="text-gray-600 text-xl max-w-lg mb-10 leading-relaxed font-medium">
+                    Kami hadir buat kamu yang capek sama harga novel selangit dan pengiriman yang bikin buku penyok. Saatnya ganti vibe membacamu!
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#curhat" class="bg-teal-600 text-white px-10 py-5 rounded-3xl font-black text-lg shadow-2xl shadow-teal-200 hover:bg-teal-700 transition-all">
+                        CEK MASALAHMU <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative hidden lg:block">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800" class="rounded-[80px] shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500" alt="Book Lovers">
+                <div class="absolute -bottom-10 -left-10 bg-white p-8 rounded-[40px] shadow-2xl border border-pink-100 animate-bounce">
+                    <p class="text-4xl font-black text-pink-500">Ori 100%</p>
+                    <p class="text-teal-900 font-bold uppercase tracking-widest text-xs">No Bajakan Club!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION: PERMASALAHAN (The Real Pain) -->
+    <section id="curhat" class="py-24 px-6 bg-white rounded-t-[100px] shadow-inner">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-6xl font-black text-teal-900 mb-4">Lingkaran Setan <br> <span class="text-pink-500">Dunia Literasi</span> 💀</h2>
+                <p class="text-gray-500 font-medium">Jujur aja, kamu pasti sering ngerasain ini kan?</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Masalah 1 -->
+                <div class="bg-[#FFF5F7] p-10 rounded-[50px] border border-pink-100 card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl mb-8 shadow-sm">💸</div>
+                    <h3 class="text-2xl font-black text-teal-900 mb-4">Harga "Sakit Hati"</h3>
+                    <p class="text-gray-600 leading-relaxed">Pengen beli novel terbaru yang lagi viral, tapi harganya setara makan seminggu di kantin.</p>
+                </div>
+
+                <!-- Masalah 2 -->
+                <div class="bg-[#F0FDF4] p-10 rounded-[50px] border border-teal-100 card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl mb-8 shadow-sm">🚚</div>
+                    <h3 class="text-2xl font-black text-teal-900 mb-4">Kurir "Smackdown"</h3>
+                    <p class="text-gray-600 leading-relaxed">Buku sampai tapi ujungnya penyok atau lecet karena packing yang cuma seadanya.</p>
+                </div>
+
+                <!-- Masalah 3 -->
+                <div class="bg-[#F5F3FF] p-10 rounded-[50px] border border-purple-100 card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl mb-8 shadow-sm">💩</div>
+                    <h3 class="text-2xl font-black text-teal-900 mb-4">Terjebak Bajakan</h3>
+                    <p class="text-gray-600 leading-relaxed">Ketipu harga murah tapi dapet buku fotokopian yang bau tintanya bikin pusing kepala.</p>
+                </div>
+
+                <!-- Masalah 4 -->
+                <div class="bg-[#FEFCE8] p-10 rounded-[50px] border border-yellow-100 card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl mb-8 shadow-sm">📱</div>
+                    <h3 class="text-2xl font-black text-teal-900 mb-4">Doom Scrolling</h3>
+                    <p class="text-gray-600 leading-relaxed">Waktu habis cuma buat scroll sosmed karena gak ada bacaan seru yang nemenin kamu.</p>
+                </div>
+
+                <!-- Masalah 5 -->
+                <div class="bg-[#EFF6FF] p-10 rounded-[50px] border border-blue-100 card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl mb-8 shadow-sm">🧩</div>
+                    <h3 class="text-2xl font-black text-teal-900 mb-4">Bingung Pilih Genre</h3>
+                    <p class="text-gray-600 leading-relaxed">Banyak pilihan tapi gak ada yang ngertiin mana buku yang pas buat mood kamu hari ini.</p>
+                </div>
+
+                <!-- Masalah 6 -->
+                <div class="bg-[#FDF2F8] p-10 rounded-[50px] border border-pink-100 card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-3xl mb-8 shadow-sm">🕰️</div>
+                    <h3 class="text-2xl font-black text-teal-900 mb-4">Akses Gak Update</h3>
+                    <p class="text-gray-600 leading-relaxed">Toko buku lokal koleksinya jadul banget. Buku BookTok yang lagi hits susah dicari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: SOLUSI (The Superpowers) -->
+    <section id="solusi" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto bg-teal-900 rounded-[80px] p-12 md:p-24 relative overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-pink-500 rounded-full blur-[120px] opacity-20"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-teal-400 rounded-full blur-[120px] opacity-20"></div>
+
+            <div class="relative z-10 text-center mb-20">
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-6">Tenang, BookVibe <br> <span class="italic text-pink-400 underline decoration-white">Punya Solusinya!</span></h2>
+                <p class="text-teal-100 text-lg">Gak perlu galau literasi lagi, kita beresin semua buat kamu!</p>
+            </div>
+
+            <div class="relative z-10 grid md:grid-cols-2 gap-12">
+                <!-- Solusi 1 -->
+                <div class="flex gap-8 group">
+                    <div class="w-16 h-16 bg-teal-800 rounded-[20px] flex items-center justify-center shrink-0 group-hover:bg-pink-500 transition-all duration-500 shadow-xl">
+                        <i class="fas fa-tags text-teal-100 group-hover:text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2 italic">Harga Pelajar & Mahasiswa</h4>
+                        <p class="text-teal-100/60 leading-relaxed">Promo khusus dan harga paket hemat biar kamu bisa koleksi banyak tanpa harus puasa senin-kamis.</p>
+                    </div>
+                </div>
+
+                <!-- Solusi 2 -->
+                <div class="flex gap-8 group">
+                    <div class="w-16 h-16 bg-teal-800 rounded-[20px] flex items-center justify-center shrink-0 group-hover:bg-pink-500 transition-all duration-500 shadow-xl">
+                        <i class="fas fa-box-open text-teal-100 group-hover:text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2 italic">Armor-Style Packaging</h4>
+                        <p class="text-teal-100/60 leading-relaxed">Double bubble wrap + kardus tebal. Kita jamin buku sampai dengan mulus semulus wajah setelah skincare-an.</p>
+                    </div>
+                </div>
+
+                <!-- Solusi 3 -->
+                <div class="flex gap-8 group">
+                    <div class="w-16 h-16 bg-teal-800 rounded-[20px] flex items-center justify-center shrink-0 group-hover:bg-pink-500 transition-all duration-500 shadow-xl">
+                        <i class="fas fa-search text-teal-100 group-hover:text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2 italic">Kurasi Novel Viral</h4>
+                        <p class="text-teal-100/60 leading-relaxed">Kita selalu update buku-buku trending di TikTok & Twitter. Gak bakal ketinggalan zaman!</p>
+                    </div>
+                </div>
+
+                <!-- Solusi 4 -->
+                <div class="flex gap-8 group">
+                    <div class="w-16 h-16 bg-teal-800 rounded-[20px] flex items-center justify-center shrink-0 group-hover:bg-pink-500 transition-all duration-500 shadow-xl">
+                        <i class="fas fa-magic text-teal-100 group-hover:text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-white mb-2 italic">Mood Reading Match</h4>
+                        <p class="text-teal-100/60 leading-relaxed">Bingung baca apa? Konsultasi gratis sama admin buat nemuin buku yang klik sama perasaanmu saat ini.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof (Testimoni) -->
+    <section id="testi" class="py-24 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-black text-center text-teal-900 mb-16 italic underline decoration-pink-500">Kata Bestie BookVibe 💖</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-10 rounded-[40px] shadow-xl rotate-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://i.pravatar.cc/100?u=1" class="w-14 h-14 rounded-2xl border-4 border-white shadow-lg">
+                        <div>
+                            <p class="font-black text-teal-900 uppercase tracking-tighter">Siska - UNISBANK</p>
+                            <div class="flex text-yellow-400 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Gila sih, order kemaren hari ini sampe. Packaging-nya niat banget sampe susah dibongkar, tapi bukunya aman banget!"</p>
+                </div>
+
+                <div class="glass p-10 rounded-[40px] shadow-xl -rotate-1">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://i.pravatar.cc/100?u=2" class="w-14 h-14 rounded-2xl border-4 border-white shadow-lg">
+                        <div>
+                            <p class="font-black text-teal-900 uppercase tracking-tighter">Raka - SMA 1 SMG</p>
+                            <div class="flex text-yellow-400 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Adminnya asik bgt pas ditanya rekomendasi buat pemula. Gak nyesel langganan di sini terus!"</p>
+                </div>
+
+                <div class="glass p-10 rounded-[40px] shadow-xl rotate-2">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://i.pravatar.cc/100?u=3" class="w-14 h-14 rounded-2xl border-4 border-white shadow-lg">
+                        <div>
+                            <p class="font-black text-teal-900 uppercase tracking-tighter">Nadia - UNDIP</p>
+                            <div class="flex text-yellow-400 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Akhirnya nemu toko yang ngertiin kantong mahasiswa. Bukunya ori, dapet freebies stiker lucu lagi!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-32 px-6">
+        <div class="max-w-4xl mx-auto text-center bg-white p-12 md:p-24 rounded-[100px] border-4 border-teal-900 shadow-[20px_20px_0px_0px_rgba(13,148,136,1)]">
+            <h2 class="text-5xl md:text-7xl font-black text-teal-900 mb-8 leading-none">Siap Mulai <br> <span class="text-pink-500">Healing-mu?</span></h2>
+            <p class="text-xl text-gray-600 mb-12 font-medium">Join 5000+ pelajar & mahasiswa yang udah ganti vibe baca bareng kita.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <input type="text" placeholder="No WhatsApp Kamu..." class="bg-pink-50 border-2 border-pink-100 px-8 py-5 rounded-3xl outline-none focus:border-pink-500 transition-all text-lg font-bold w-full sm:w-80">
+                <button class="bg-teal-600 text-white px-10 py-5 rounded-3xl font-black text-lg shadow-xl hover:bg-teal-700 transition-all hover:scale-105 uppercase tracking-widest">
+                    Klaim Diskon 15%
+                </button>
+            </div>
+            <p class="mt-8 text-xs text-gray-400 font-bold uppercase tracking-widest italic">*Voucher terbatas hanya untuk hari ini!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-pink-100">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-teal-900 rounded-lg"></div>
+                <span class="text-2xl font-black text-teal-900 tracking-tighter">BookVibe.</span>
+            </div>
+            <div class="flex gap-10 text-teal-500 text-2xl">
+                <a href="#" class="hover:text-pink-500 transition-all"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-pink-500 transition-all"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="hover:text-pink-500 transition-all"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="text-gray-400 text-xs font-black uppercase tracking-[0.3em]">© 2026 BookVibe Community Central Java</p>
+        </div>
+    </footer>
+
+</body>
+</html>
